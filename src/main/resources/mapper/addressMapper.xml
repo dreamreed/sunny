@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.debug.mapper.AddressMapper">
+	<!-- 回收策略为先进先出 --> <!-- 自动刷新时间60s --><!-- 最多缓存512个引用对象 -->
+	<!-- <cache eviction="FIFO" flushInterval="30000" size="512" readOnly="false" /> -->  <!-- 只读 -->
+
+	<select id="findAddressByMap" resultType="com.debug.model.Address">
+	select a.id,a.areaId,a.areaName,a.areaPid from address a;
+	</select>
+
+
+
+
+
+
+</mapper>
